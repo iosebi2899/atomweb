@@ -394,9 +394,6 @@ footer form {
   bottom: 0; }
   @media (max-width: 630px) {
     footer form {
-      width: 350px; } }
-  @media (max-width: 400px) {
-    footer form {
       width: 220px; } }
   footer form input {
     background-color: #B8EDF8;
