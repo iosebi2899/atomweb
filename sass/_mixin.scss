@@ -1,0 +1,36 @@
+@mixin transition{
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+@mixin header{
+    .header{
+        text-align: center;
+        margin-bottom: 14px;
+        font-size: 24px;
+        font-family: 'BPG Glaho WEB Caps';
+    }
+    .break-line{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 2px;
+        background-color: black;
+    }
+}
+@mixin mini-header {
+    .header{
+        text-align: center;
+        margin-bottom: 14px;
+        font-size: 24px;
+        font-family: 'BPG Glaho WEB Caps';
+    }
+}
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
