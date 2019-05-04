@@ -202,6 +202,17 @@ main{
             @media (max-width:800px){
                 bottom: 30%;
             }
+            @media (max-width:768px){
+                bottom: 10%;
+                h1{
+                    font-size: 8px;
+                    line-height: 10px;
+                }
+                h2{
+                    font-size:3px;
+                }
+            }
+
 
             h1{
                 font-family: 'BPG Glaho WEB Caps';
@@ -211,7 +222,6 @@ main{
             h2{
                 font-family: 'BPG Nino Mkhedruli Book';
                 font-size:30px;
-                line-height: 40px;
             }
         }
     }
