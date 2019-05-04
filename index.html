@@ -12,17 +12,32 @@
 <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <header >
-        <div class="main-logo"> 
-            <img src="img/logo.svg" alt="logo">
+    <header class="main-header">
+        <div class="container">
+            <div class="main-logo"> 
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <nav class="main-navigation">
+                <li><a href="#zero">მთავარი</a></li>
+                <li><a href="#first">რას ვაკეთებ</a></li>
+                <li><a href="#second">ნამუშევრები</a></li>
+                <li><a href="#third">ჩემს შესახებ</a></li>
+                <li><a href="#fourth">კონტაქტი</a></li>
+            </nav>
+            <div class="height-line"></div>
+            <div class="burger-menu">
+                <div class="burger"></div>  
+            </div>
         </div>
-        <nav class="main-navigation">
-            <li><a href="#zero">მთავარი</a></li>
-            <li><a href="#first">რას ვაკეთებ</a></li>
-            <li><a href="#second">ნამუშევრები</a></li>
-            <li><a href="#third">ჩემს შესახებ</a></li>
-            <li><a href="#fourth">კონტაქტი</a></li>
-        </nav>
+        <div class="invisible">
+            <nav class="main-navigation">
+                <li><a href="#zero">მთავარი</a></li>
+                <li><a href="#first">რას ვაკეთებ</a></li>
+                <li><a href="#second">ნამუშევრები</a></li>
+                <li><a href="#third">ჩემს შესახებ</a></li>
+                <li><a href="#fourth">კონტაქტი</a></li>
+            </nav>
+        </div>    
     </header>
     <main>
         <div class="main-banner" id="zero">
@@ -87,30 +102,28 @@
                             <h1><a href="#">ვებ სტუდიოს ვებგვერდი</a></h1>
                         </div>
                     </div>
-                </div>
-                <div class="image-container2">
-                        <div>
-                            <img src="img/project1.png" alt="project1">
-                            <div class="hover">
-                                <img src="img/skratch.svg" alt="skratch">
-                                <h1><a href="#">ვებ სტუდიოს ვებგვერდი</a></h1>
-                            </div>
+                    <div>
+                        <img src="img/project1.png" alt="project1">
+                        <div class="hover">
+                            <img src="img/skratch.svg" alt="skratch">
+                            <h1><a href="#">ვებ სტუდიოს ვებგვერდი</a></h1>
                         </div>
-                        <div>
-                            <img src="img/project2.png" alt="project1">
-                            <div class="hover">
-                                <img src="img/skratch.svg" alt="skratch">
-                                <h1><a href="#">ვებ სტუდიოს ვებგვერდი</a></h1>
-                            </div>
+                    </div>
+                    <div>
+                        <img src="img/project2.png" alt="project1">
+                        <div class="hover">
+                            <img src="img/skratch.svg" alt="skratch">
+                            <h1><a href="#">ვებ სტუდიოს ვებგვერდი</a></h1>
                         </div>
-                        <div>
-                            <img src="img/project3.png" alt="project1">
-                            <div class="hover">
-                                <img src="img/skratch.svg" alt="skratch">
-                                <h1><a href="#">ვებ სტუდიოს ვებგვერდი</a></h1>
-                            </div>
+                    </div>
+                    <div>
+                        <img src="img/project3.png" alt="project1">
+                        <div class="hover">
+                            <img src="img/skratch.svg" alt="skratch">
+                            <h1><a href="#">ვებ სტუდიოს ვებგვერდი</a></h1>
                         </div>
-                </div>
+                    </div>
+                </div>    
         </section>
         <section class="third" id="third">
             <article>
@@ -148,6 +161,7 @@
             <img src="img/footer-logo.svg" alt="logo">
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
