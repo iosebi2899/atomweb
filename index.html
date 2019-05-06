@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/stylesheet.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -42,25 +43,25 @@
             <h1 class="header">რას ვაკეთებ</h1>
             <div class="break-line"></div>
             <div class="article-container">
-                <article>
+                <article data-aos="fade-up">
                         <img src="img/light.svg" alt="light">
                         <div class="line"></div>
                         <h1>იდეა</h1>
                         <h2>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</h2>
                 </article>
-                <article>
+                <article data-aos="fade-up">
                         <img src="img/media.svg" alt="light">
                         <div class="line"></div>
                         <h1>დიზაინი</h1>
                         <h2>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</h2>
                 </article>
-                <article>
+                <article data-aos="fade-up">
                         <img src="img/slash.svg" alt="light">
                         <div class="line"></div>
                         <h1>პროგრამირება</h1>
                         <h2>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</h2>
                 </article>
-                <article>
+                <article data-aos="fade-up">
                         <img src="img/headset.svg" alt="light">
                         <div class="line"></div>
                         <h1>მხარდაჭერა</h1>
@@ -68,10 +69,10 @@
                 </article>        
             </div>    
         </section>
-        <section class="second" id="second">
+        <section class="second" id="second" >
                 <h1 class="header">ნამუშევრები</h1>
                 <div class="break-line"></div>
-                <div class="image-container">
+                <div class="image-container" data-aos="fade-up">
                     <div>
                         <img src="img/project1.png" alt="project1">
                         <div class="hover">
@@ -118,11 +119,11 @@
         </section>
         <section class="third" id="third">
             <article>
-                <div class="left-photo">
+                <div class="left-photo" data-aos="fade-up">
                     <img src="img/photo.jpg" alt="photo">
                     <div class="shadow"></div>
                 </div>
-                <div class="right-text">
+                <div class="right-text" data-aos="fade-up">
                     <h1>ჩემს შესახებ</h1>
                     <div class="break-line"></div>
                     <h2>განუხილავს ხვრინავს დაასწრეს ბრესონისთვის გამოასახლეს მზემოკიდებული სახარინს ასიოდე შეგარჩენდა, მომხდარაო ქალებზე გარშემომყოფების. გამოასახლეს ჩაყვითლებულ ჯავარსავით დასწავლა გავდა დროზედ მიბრძანებს სტუმრობდა დაჰკვალა გარშემომყოფების. პუპი დამამწვდია დამატკბობელ ბეტს გააქვს აყვნენ მოხვდეთ. ფერადოვანი დაასწრეს თეტჩერმა გაგვაკვირვეს კომისიაც აღწერილ.
@@ -154,5 +155,10 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
 </body>
 </html>
