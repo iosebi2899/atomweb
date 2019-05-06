@@ -16,8 +16,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-   
-    
     
 
 .main-logo{
@@ -37,6 +35,9 @@ html {
             font-family: 'BPG Glaho WEB Caps';
             font-size: 20px;
             color:black;
+            @media (max-width:1000px) {
+                display: none;
+            }
             a{
                 color: black;
                 @include transition;
@@ -44,14 +45,25 @@ html {
             :hover{
                 color:#B8EDF8;
             }
-            @media (max-width:1000px){
-                display: none;
-            }
-
         }
         :nth-child(5)
         {
             padding-right: 0px;
+        }
+        &.active{
+            display: block;
+            background-color:#B8EDF8;
+            width: 100%;
+            height: 800px;
+            text-align: center;
+            padding-top:20px;
+            position: absolute;
+            top: 75px;
+            left:0;
+            li{
+                padding: 10% 0;
+                display: block;
+            }
         }
     }    
     .height-line{
@@ -129,54 +141,6 @@ html {
         }
     }
 }
-.invisible{
-    display:none;
-    height: 0px;
-    background-color: #B8EDF8;
-    width: 100%;
-    text-align: center;
-    nav{
-        padding-top:52px;
-        li{ 
-            display: block;
-            padding-bottom: 52px;
-            a{  
-            }
-        }
-    }
-
-    &.active{
-        display: block;
-        width: 100%;
-        height: 862px;
-        
-        padding-top:30px;
-        nav{
-            li{
-            a{
-                opacity: 1;
-            }
-        }
-    }
-    }
-        li{
-            
-            display: inline-block;
-            padding-right:30px;
-            font-family: 'BPG Glaho WEB Caps';
-            font-size: 20px;
-            color:black;
-            a{
-                color: black;
-                @include transition;
-            }    
-            
-            @media (max-width:1000px){
-                display: none;
-            }
-
-        }
-}    
 }
 // header-end
 
@@ -202,7 +166,7 @@ main{
             @media (max-width:800px){
                 bottom: 30%;
             }
-            @media (max-width:768px){
+            @media (max-width:570px){
                 bottom: 10%;
                 h1{
                     font-size: 8px;
@@ -472,7 +436,16 @@ footer{
             color: #666666;
         }
         .message{
+            background-color: #B8EDF8;
+            margin: 20px 0;
+            width: 100%;
+            height: 25px;
+            border:1px solid black;
+            font-family:'BPG Nino Mkhedruli Book';
+            padding-left : 20px;
+            color: #666666;
             height: 100px;
+            padding-top: 10px;
         }
         .submit-box{
             position: relative;
@@ -492,6 +465,7 @@ footer{
                 bottom:-40px;
                 right: -4%;
                 border:0;
+                padding:0;
                 margin:0;
                 background-color: #7EC4CE;
                 text-align: center;
@@ -504,6 +478,12 @@ footer{
                 &:hover{
                     color:#7EC4CE;
                     background-color: white;
+                }
+                @media (max-width:800px){
+                    right:-8%;
+                }
+                @media (max-width:630px){
+                    right:-10%;
                 }
             }
         }    
@@ -529,7 +509,7 @@ footer{
         }
         img{
             height: 32px;
-            width: 100%;
+            // width: 100%;
             @media (max-width:630px) {
                 position: relative;
                 left:50%;
